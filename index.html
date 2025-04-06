@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Snake Game <span class="snake-icon"><i class="fas fa-snake"></i></span></h1>
+        
+        <div class="game-area">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+        
+        <div class="controls-container">
+            <div class="instructions">
+                <h3>How to Play</h3>
+                <ul>
+                    <li><i class="fas fa-arrow-up"></i> <i class="fas fa-arrow-down"></i> <i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-right"></i> or <strong>WASD</strong> to move</li>
+                    <li><strong>P</strong> to pause/resume</li>
+                    <li><strong>M</strong> to return to menu</li>
+                    <li><strong>Enter</strong> to restart after game over</li>
+                </ul>
+            </div>
+            
+            <div class="features">
+                <h3>Features</h3>
+                <ul>
+                    <li><span class="feature-dot" style="background-color: #e74c3c;"></span> Regular food (1 point)</li>
+                    <li><span class="feature-dot" style="background-color: #f39c12;"></span> Power-up (5 points + growth)</li>
+                    <li>Three difficulty levels</li>
+                    <li>Wall wrapping</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Mobile controls (touch) -->
+        <div class="mobile-controls">
+            <div class="mobile-button up"><i class="fas fa-arrow-up"></i></div>
+            <div class="mobile-row">
+                <div class="mobile-button left"><i class="fas fa-arrow-left"></i></div>
+                <div class="mobile-button right"><i class="fas fa-arrow-right"></i></div>
+            </div>
+            <div class="mobile-button down"><i class="fas fa-arrow-down"></i></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Created with <i class="fas fa-heart"></i> by Snake Game Developer</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
